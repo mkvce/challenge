@@ -2,7 +2,7 @@ def calculate_sum_of_multiples(max_num: int, *args):
     s = 0
     for x in range(max_num):
         reminders = [x % arg for arg in args]
-        if not all(reminders):
+        if not all((x % arg for arg in args)):
             s += x
     return s
 
