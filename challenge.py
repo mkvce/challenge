@@ -18,7 +18,8 @@ def calculate_sum_of_multiples(max_num: int, mult1: int, mult2: int)->int:
     sum_of_mult1_multiples = get_sum_of_multiples(max_num, mult1)
     sum_of_mult2_multiples = get_sum_of_multiples(max_num, mult2)
     sum_of_common_multiples = get_sum_of_multiples(max_num, mult1 * mult2)
-    return sum_of_mult1_multiples + sum_of_mult2_multiples - sum_of_common_multiples
+    return (sum_of_mult1_multiples + sum_of_mult2_multiples
+           - sum_of_common_multiples)
 
 def main():
     max_num = 999
