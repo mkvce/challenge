@@ -1,7 +1,7 @@
-def calculate_sum_of_multiples(max_num: int, *args):
+def calculate_sum_of_multiples(max_num: int, *multiples) -> int:
     s = 0
     for x in range(max_num):
-        if not all((x % arg for arg in args)):
+        if not all((x % multiple for multiple in multiples)):
             s += x
     return s
 
